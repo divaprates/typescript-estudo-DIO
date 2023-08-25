@@ -14,14 +14,39 @@
 Estudo de Typescript.
 
 <br>
+
+##
+
 Inicializar um projeto node:
+
+```
     npm init -y
+```
 
-Adicionar TypeScript ao Projeto:
+Adicionar o TypeScript ao Projeto:
+
+```
     npm install typescript -D
+```
 
-Transpilar os arquivos para Javascript:
+Transpilar os arquivos para Javascript (criando um index.js na mesma pasta):
+
+```
     npx tsc src/index.ts
+```
+
+Criando um tsconfig.json - para configurações do TypeScript:
+
+```
+    npx tsc --init
+```
+
+Transpilar os arquivos para JavaScript, após edição do tsconfig.json (salvando em ./build):
+
+```
+    npx tsc
+```
+
 
 ##
 ### Tecnologias utilizadas:
