@@ -16,6 +16,7 @@ Estudo de Typescript.
 <br>
 
 ##
+### Configurações realizadas:
 
 Inicializar um projeto node:
 
@@ -47,6 +48,11 @@ Transpilar os arquivos para JavaScript, após edição do tsconfig.json (salvand
     npx tsc
 ```
 
+### Executar:
+
+```
+    npm run start
+```
 
 ##
 ### Tecnologias utilizadas:
