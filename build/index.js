@@ -31,3 +31,6 @@ console.log(p.sayHello());
 const p2 = new classes_1.Personagem("Bob", 10);
 console.log(p2);
 p2.attack();
+const p3 = new classes_1.Magia("Mago", 12, 100);
+console.log(p3);
+p3.attack();

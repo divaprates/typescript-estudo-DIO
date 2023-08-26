@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Personagem = exports.Pessoa = void 0;
+exports.Magia = exports.Personagem = exports.Pessoa = void 0;
 class Pessoa {
     constructor(id, nome) {
         this.id = id;
@@ -21,3 +21,10 @@ class Personagem {
     }
 }
 exports.Personagem = Personagem;
+class Magia extends Personagem {
+    constructor(name, power, points) {
+        super(name, power);
+        this.points = points;
+    }
+}
+exports.Magia = Magia;

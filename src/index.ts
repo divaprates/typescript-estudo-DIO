@@ -1,5 +1,5 @@
 import { lista } from "./array";
-import { Personagem, Pessoa } from "./classes";
+import { Magia, Personagem, Pessoa } from "./classes";
 import { data } from "./datas";
 import { nomeFrutas, ola, printObj, soma } from "./funcoes";
 import { robo } from "./interfaces";
@@ -41,3 +41,7 @@ console.log(p.sayHello());
 const p2 = new Personagem("Bob", 10);
 console.log(p2);
 p2.attack();
+
+const p3 = new Magia("Mago", 12, 100);
+console.log(p3);
+p3.attack();

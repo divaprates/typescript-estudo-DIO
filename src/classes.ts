@@ -29,3 +29,12 @@ export class Personagem {
         this.power = power;
     }
 }
+
+export class Magia extends Personagem {
+    private points: number;
+
+    constructor(name: string, power: number, points: number) {
+        super(name, power);
+        this.points = points;
+    }
+}
