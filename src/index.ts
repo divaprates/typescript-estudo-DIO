@@ -41,3 +41,10 @@ let boletos: [string, number, number] = ["luz", 89.99, 12];
 // datas
 let data: Date = new Date("2023-08-25 5:00");
 console.log(data.toString());
+
+async function nomeFrutas(params:string): Promise<string> {
+    return params;
+}
+
+nomeFrutas("cacau").then((i) => console.log(i));
+
