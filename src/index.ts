@@ -33,8 +33,11 @@ let meuProduto: ProdutoLoja = {
 let lista: string[] = ["ameixa", "banana", "caju"];
 let lista2: Array<string> = ["goiaba", "limão"];
 let infos: (string | number)[] = ["morango", 10, "mamão", 8];
+lista.push("melancia");
 
 // tuplas
 let boletos: [string, number, number] = ["luz", 89.99, 12];
 
-lista.push("melancia");
+// datas
+let data: Date = new Date("2023-08-25 5:00");
+console.log(data.toString());
