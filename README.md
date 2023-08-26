@@ -59,6 +59,8 @@ Transpilar os arquivos para JavaScript, após edição do tsconfig.json (salvand
 
 <div>
    <img align="center" alt="HTML" height="30" width="40" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
+   <img align="center" alt="Javascript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" />
+
 </div>
 
 ##
