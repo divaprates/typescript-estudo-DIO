@@ -33,3 +33,8 @@ let meuProduto: ProdutoLoja = {
 let lista: string[] = ["ameixa", "banana", "caju"];
 let lista2: Array<string> = ["goiaba", "limão"];
 let infos: (string | number)[] = ["morango", 10, "mamão", 8];
+
+// tuplas
+let boletos: [string, number, number] = ["luz", 89.99, 12];
+
+lista.push("melancia");
