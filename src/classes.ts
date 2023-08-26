@@ -15,3 +15,17 @@ export class Pessoa implements robo {
 
     
 }
+
+export class Personagem {
+    name: string;
+    power: number;
+
+    attack(): void {
+        console.log("Ataque com ", this.power);
+    }
+
+    constructor(name: string, power: number) {
+        this.name = name;
+        this.power = power;
+    }
+}

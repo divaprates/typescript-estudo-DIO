@@ -25,5 +25,9 @@ let r = {
     }
 };
 console.log(r);
+// classes
 let p = new classes_1.Pessoa(1, "p");
 console.log(p.sayHello());
+const p2 = new classes_1.Personagem("Bob", 10);
+console.log(p2);
+p2.attack();
