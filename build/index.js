@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const array_1 = require("./array");
+const classes_1 = require("./classes");
 const datas_1 = require("./datas");
 const funcoes_1 = require("./funcoes");
 // array
@@ -18,6 +19,11 @@ console.log((0, funcoes_1.ola)("Fulano"));
 // interface
 let r = {
     id: 1,
-    nome: "px"
+    nome: "px",
+    sayHello: function () {
+        return "oi";
+    }
 };
 console.log(r);
+let p = new classes_1.Pessoa(1, "p");
+console.log(p.sayHello());

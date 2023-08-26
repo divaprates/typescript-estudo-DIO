@@ -1,4 +1,5 @@
 import { lista } from "./array";
+import { Pessoa } from "./classes";
 import { data } from "./datas";
 import { nomeFrutas, ola, printObj, soma } from "./funcoes";
 import { robo } from "./interfaces";
@@ -25,7 +26,13 @@ console.log(ola("Fulano"));
 // interface
 let r: robo = {
     id: 1,
-    nome: "px"
+    nome: "px",
+    sayHello: function (): string {
+        return "oi"
+    }
 }
 
 console.log(r);
+
+let p = new Pessoa(1, "p");
+console.log(p.sayHello());
