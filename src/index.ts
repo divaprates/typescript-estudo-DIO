@@ -1,50 +1,31 @@
-type heroi = {
-    name: string;
-    vulgo: string;
-}
+import { lista } from "./array";
+import { data } from "./datas";
+import { nomeFrutas, ola, printObj, soma } from "./funcoes";
+import { robo } from "./interfaces";
 
-function printObj(pessoa: heroi){
-    console.log(pessoa);
-}
 
+// array
+lista.push("melancia");
+
+// datas
+console.log(data.toString());
+
+// funções
 printObj({
     name: "Bruce", vulgo: "Batman"
 })
 
-// objetos
-let produto: object = {
-    name: "khaleesi",
-    tipo: "mãe de dragões"
-}
-
-type ProdutoLoja = {
-    nome: string;
-    preco: number;
-    unidades: number;
-};
-
-let meuProduto: ProdutoLoja = {
-    nome: "jaqueta",
-    preco: 8.99,
-    unidades: 12
-};
-
-// array
-let lista: string[] = ["ameixa", "banana", "caju"];
-let lista2: Array<string> = ["goiaba", "limão"];
-let infos: (string | number)[] = ["morango", 10, "mamão", 8];
-lista.push("melancia");
-
-// tuplas
-let boletos: [string, number, number] = ["luz", 89.99, 12];
-
-// datas
-let data: Date = new Date("2023-08-25 5:00");
-console.log(data.toString());
-
-async function nomeFrutas(params:string): Promise<string> {
-    return params;
-}
-
 nomeFrutas("cacau").then((i) => console.log(i));
 
+let res:number = soma(10, 4);
+console.log(res);
+
+console.log(ola("Fulano"));
+
+// interface
+let r: robo = {
+    id: 1,
+    nome: "px"
+}
+
+console.log(r);

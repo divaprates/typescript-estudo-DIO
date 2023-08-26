@@ -1,42 +1,23 @@
 "use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-function printObj(pessoa) {
-    console.log(pessoa);
-}
-printObj({
+Object.defineProperty(exports, "__esModule", { value: true });
+const array_1 = require("./array");
+const datas_1 = require("./datas");
+const funcoes_1 = require("./funcoes");
+// array
+array_1.lista.push("melancia");
+// datas
+console.log(datas_1.data.toString());
+// funções
+(0, funcoes_1.printObj)({
     name: "Bruce", vulgo: "Batman"
 });
-// objetos
-let produto = {
-    name: "khaleesi",
-    tipo: "mãe de dragões"
+(0, funcoes_1.nomeFrutas)("cacau").then((i) => console.log(i));
+let res = (0, funcoes_1.soma)(10, 4);
+console.log(res);
+console.log((0, funcoes_1.ola)("Fulano"));
+// interface
+let r = {
+    id: 1,
+    nome: "px"
 };
-let meuProduto = {
-    nome: "jaqueta",
-    preco: 8.99,
-    unidades: 12
-};
-// array
-let lista = ["ameixa", "banana", "caju"];
-let lista2 = ["goiaba", "limão"];
-let infos = ["morango", 10, "mamão", 8];
-lista.push("melancia");
-// tuplas
-let boletos = ["luz", 89.99, 12];
-// datas
-let data = new Date("2023-08-25 5:00");
-console.log(data.toString());
-function nomeFrutas(params) {
-    return __awaiter(this, void 0, void 0, function* () {
-        return params;
-    });
-}
-nomeFrutas("cacau").then((i) => console.log(i));
+console.log(r);

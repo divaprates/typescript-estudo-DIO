@@ -1,12 +1,17 @@
-function soma(x: number, y: number) {
+import { heroi } from "./obj";
+
+export function soma(x: number, y: number) {
     return x + y;
 }
 
-function ola(nome: string): string {
-    return 'Ola' + nome;
+export function ola(nome: string): string {
+    return "Ola," + nome;
 }
 
-let res:number = soma(10, 4);
-console.log(res);
+export function printObj(pessoa: heroi){
+    console.log(pessoa);
+}
 
-console.log("Fulano");
+export async function nomeFrutas(params:string): Promise<string> {
+    return params;
+}
