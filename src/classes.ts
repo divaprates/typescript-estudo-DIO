@@ -17,10 +17,10 @@ export class Pessoa implements robo {
 }
 
 export class Personagem {
-    name: string;
-    power: number;
+    private name: string;
+    private power: number;
 
-    attack(): void {
+    public attack(): void {
         console.log("Ataque com ", this.power);
     }
 
