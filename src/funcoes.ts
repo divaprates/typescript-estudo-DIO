@@ -15,3 +15,7 @@ export function printObj(pessoa: heroi){
 export async function nomeFrutas(params:string): Promise<string> {
     return params;
 }
+
+export function concatArray<T>(...items: T[]): T[] {
+    return new Array().concat(...items);
+}

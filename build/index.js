@@ -16,6 +16,10 @@ console.log(datas_1.data.toString());
 let res = (0, funcoes_1.soma)(10, 4);
 console.log(res);
 console.log((0, funcoes_1.ola)("Fulano"));
+const numArray = (0, funcoes_1.concatArray)([1, 3], [3, 6]);
+console.log(numArray);
+const stringArray = (0, funcoes_1.concatArray)(["a", "b"], ["c", "d"]);
+console.log(stringArray);
 // interface
 let r = {
     id: 1,

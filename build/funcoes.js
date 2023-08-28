@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.nomeFrutas = exports.printObj = exports.ola = exports.soma = void 0;
+exports.concatArray = exports.nomeFrutas = exports.printObj = exports.ola = exports.soma = void 0;
 function soma(x, y) {
     return x + y;
 }
@@ -28,3 +28,7 @@ function nomeFrutas(params) {
     });
 }
 exports.nomeFrutas = nomeFrutas;
+function concatArray(...items) {
+    return new Array().concat(...items);
+}
+exports.concatArray = concatArray;

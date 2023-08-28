@@ -1,7 +1,7 @@
 import { lista } from "./array";
 import { Magia, Personagem, Pessoa } from "./classes";
 import { data } from "./datas";
-import { nomeFrutas, ola, printObj, soma } from "./funcoes";
+import { concatArray, nomeFrutas, ola, printObj, soma } from "./funcoes";
 import { robo } from "./interfaces";
 
 
@@ -22,6 +22,12 @@ let res:number = soma(10, 4);
 console.log(res);
 
 console.log(ola("Fulano"));
+
+const numArray = concatArray<number[]>([1,3], [3,6]);
+console.log(numArray);
+
+const stringArray = concatArray<string[]>(["a", "b"], ["c", "d"]);
+console.log(stringArray);
 
 // interface
 let r: robo = {
