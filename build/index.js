@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const array_1 = require("./array");
 const classes_1 = require("./classes");
 const datas_1 = require("./datas");
+const decorators_1 = require("./decorators");
 const funcoes_1 = require("./funcoes");
 // array
 array_1.lista.push("melancia");
@@ -38,3 +39,6 @@ p2.attack();
 const p3 = new classes_1.Magia("Mago", 12, 100);
 console.log(p3);
 p3.attack();
+// decorators
+p: decorators_1.Person;
+console.log('decoratos');
