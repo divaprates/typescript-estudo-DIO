@@ -1,7 +1,7 @@
 import { lista } from "./array";
 import { Magia, Personagem, Pessoa } from "./classes";
 import { data } from "./datas";
-import { Api, Person } from "./decorators";
+import { Api, ApiNome, Person } from "./decorators";
 import { concatArray, nomeFrutas, ola, printObj, soma } from "./funcoes";
 import { robo } from "./interfaces";
 
@@ -59,3 +59,6 @@ console.log('decoratos');
 
 const api = new Api();
 console.log(api.__version);
+
+const apiNome = new ApiNome("Morango");
+console.log(apiNome.name);
