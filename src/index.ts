@@ -1,7 +1,7 @@
 import { lista } from "./array";
 import { Magia, Personagem, Pessoa } from "./classes";
 import { data } from "./datas";
-import { Person } from "./decorators";
+import { Api, Person } from "./decorators";
 import { concatArray, nomeFrutas, ola, printObj, soma } from "./funcoes";
 import { robo } from "./interfaces";
 
@@ -56,3 +56,6 @@ p3.attack();
 // decorators
 p: Person;
 console.log('decoratos');
+
+const api = new Api();
+console.log(api.__version);
